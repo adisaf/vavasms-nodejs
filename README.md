@@ -1,4 +1,4 @@
-# VavaSMS Node JS SMS Send
+# VavaSMS NODE JS
 
 Node JS client module to send SMS messages using VavaSMS SMS Gateway.
 
@@ -22,7 +22,7 @@ const SMS = require('vavasms-nodejs');
 const sms = new SMS('username', 'password');
 
 sms.send('+22507070101', 'Hello !')
-  .then(body => console.log(body)) // returns {code:0,message:string,data:[{lot_id:string,message_id:string,status:string}]}
+  .then(response => console.log(response.data)) // returns {code:0,message:string,data:[{lot_id:string,message_id:string,status:string}]}
   .catch(err => console.log(err.message))
 ```
 
