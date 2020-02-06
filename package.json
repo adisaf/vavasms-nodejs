@@ -24,8 +24,12 @@
     "axios": "^0.19.2",
     "query-string": "^6.10.1"
   },
+  "homepage": "https://github.com/adisaf/vavasms-nodejs",
   "repository": {
     "type": "git",
     "url": "https://github.com/adisaf/vavasms-nodejs"
+  },
+  "bugs": {
+    "url": "https://github.com/adisaf/vavasms-nodejs/issues"
   }
 }
