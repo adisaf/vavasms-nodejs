@@ -1,0 +1,27 @@
+{
+  "name": "vavasms-nodejs",
+  "version": "0.1.0",
+  "description": "Client library to send SMS using Vavasms SMS Gateway API (https://vavasms.com)",
+  "main": "vavasms.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "sms",
+    "api",
+    "nodejs",
+    "vavasms",
+    "gateway",
+    "sms-api",
+    "sms-sdk",
+    "sms-gateway",
+    "sms-client"
+  ],
+  "author": "Fawaz ADISA",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "query-string": "^6.10.1"
+  }
+}
