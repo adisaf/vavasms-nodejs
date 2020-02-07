@@ -1,4 +1,5 @@
 # VavaSMS NODE JS
+[![Build Status](https://travis-ci.com/adisaf/vavasms-nodejs.svg?branch=master)](https://travis-ci.com/adisaf/vavasms-nodejs)
 
 Node JS client module to send SMS messages using VavaSMS SMS Gateway.
 
