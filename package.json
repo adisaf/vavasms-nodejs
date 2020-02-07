@@ -1,11 +1,12 @@
 {
   "name": "vavasms-nodejs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Client library to send SMS using Vavasms SMS Gateway API (https://vavasms.com)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jasmine",
+    "test-cover": "istanbul cover spec/specs.js"
   },
   "keywords": [
     "sms",
@@ -31,5 +32,13 @@
   },
   "bugs": {
     "url": "https://github.com/adisaf/vavasms-nodejs/issues"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "jasmine": "^3.5.0",
+    "jasmine-console-reporter": "^3.1.0",
+    "jasmine-node": "^3.0.0",
+    "jasmine-supertest": "^1.0.0",
+    "supertest": "^4.0.2"
   }
 }
