@@ -16,13 +16,18 @@ with NPM
 $ npm install vavasms-nodejs
 ```
 # Send a message
+Function send
 
+| Props        | Type           | Description  |
+| :------------- |:-------------| :-----|
+| `phoneNumbers`      | string or array | phone number that will receive message |
+| `text`      | string | SMS Message |
+| `senderString`      | string | SenderID that will use |
 ```js
 const SMS = require('vavasms-nodejs');
 
 const sms = new SMS('username', 'password');
-
-sms.send('+22507070101', 'Hello !')
+sms.send('+22507070101', 'Hello !', 'VavaSMS')
   .then(response => console.log(response.data)) // returns {code:0,message:string,data:[{lot_id:string,message_id:string,status:string}]}
   .catch(err => console.log(err.message))
 ```
