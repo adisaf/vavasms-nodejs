@@ -36,7 +36,7 @@ Function status
 
 | Props        | Type           | Description  |
 | :------------- |:-------------| :-----|
-| `senderString`      | string | SenderID that will use |
+| `messageId`      | string | message id of sent message |
 ```js
 const SMS = require('vavasms-nodejs');
 
