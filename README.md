@@ -31,6 +31,20 @@ sms.send('+22507070101', 'Hello !', 'VavaSMS')
   .then(response => console.log(response.data)) // returns {code:0,message:string,data:[{lot_id:string,message_id:string,status:string}]}
   .catch(err => console.log(err.message))
 ```
+# Check the status of a sent message
+Function status
+
+| Props        | Type           | Description  |
+| :------------- |:-------------| :-----|
+| `senderString`      | string | SenderID that will use |
+```js
+const SMS = require('vavasms-nodejs');
+
+const sms = new SMS('username', 'password');
+sms.status('SM-20190623-1217879')
+  .then(response => console.log(response.data)) // returns {code:0,message:string,data:[{lot_id:string,message_id:string,status:string}]}
+  .catch(err => console.log(err.message))
+```
 
 # More info
 

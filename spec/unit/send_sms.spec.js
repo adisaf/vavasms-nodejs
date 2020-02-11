@@ -8,4 +8,8 @@ describe("VavaSMS", function () {
         const result = await sms.send('+22507070101', 'Hello !');
         expect(result.data).toBeInstanceOf(Object);
     });
+    it("should check the status of a sent message", async function () {
+        const result = await sms.status('ANY-SMS-ID');
+        expect(result.data).toBeInstanceOf(Object);
+    });
 });
