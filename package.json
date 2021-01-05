@@ -22,7 +22,7 @@
   "author": "Fawaz ADISA",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "query-string": "^6.10.1"
   },
   "homepage": "https://github.com/adisaf/vavasms-nodejs",
